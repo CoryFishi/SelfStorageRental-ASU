@@ -1,80 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Meta Tags -->
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Storage Facility">
-    <meta name="description" content="Final Project for IFT 301">
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="src/styles.css">
-    <!-- Scripts -->
-    <script src="src/main.js"></script>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!-- Website Tags and Titles -->
+    <meta name="description" content="">
+    <!-- Doc Titles -->
     <title>Storage Rent</title>
-    <link rel="shortcut icon" href="src/StorageRent.png">
-
-
-
-        <!-- Load font awesome icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="src/Logo.png">
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
+    <!-- Navbar -->
     <header>
-        <div class="navbar">
-            <div class="navbar-left">
-                <h1>Storage Rent</h1>
+        <div class="logo">
+            <a href="index.html">Storage<span style="color: #8d85e0; font-weight: 900; font-size: x-large;">Rent</span></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="storage.html">Find Storage</a></li>
+                <li><a href="guide.html">Size Guide</a></li>
+                <li>
+                    <a href="company.html">About Us</a>
+                    <ul class="sub-link">
+                        <li style="padding-top: 20px; margin-top: -10px;"><a href="company.html">Company Info</a></li>
+                        <li style="border-bottom-left-radius:15px; border-bottom-right-radius: 15px;"><a href="values.html">Values</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact.html">Support</a>
+                    <ul class="sub-link">
+                        <li style="padding-top: 20px; margin-top: -10px;"><a href="contact.html">Contact Us</a></li>
+                        <li style="border-bottom-left-radius:15px; border-bottom-right-radius: 15px;"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Welcome Banner -->
+    <section class="welcome">
+        <div>
+            <h1>Your partners in storage</h1>
+        </div>
+        <div>
+            <a href="storage.html"><button>Find Storage</button></a>
+        </div>
+    </section>
+    <!-- Reviews -->
+    <section class="reviews">
+        <div class="review">
+            <img src="src/Headshot1.jpg" alt="Headshot of customer one.">
+            <h1>Jeremy Hawkins&emsp;<span>10/10</span></h1>
+            <p>I'm thoroughly impressed with Storage Rent. The staff was friendly and informative, making the rental process smooth. The facility is clean, and the security is top-notch, giving me peace of mind. Highly recommend for their professionalism and secure storage options.</p>
+        </div>
+        <div class="review">
+            <img src="src/Headshot2.jpg" alt="Headshot of customer two.">
+            <h1>Steven Stocker&emsp;<span>9.5/10</span></h1>
+            <p>StorageRent offers a perfect blend of affordability and convenience. The selection of unit sizes and the straightforward online booking system made finding the right storage space a breeze. The facility is well-kept, and the flexible leasing options are a huge plus.</p>
+        </div>
+        <div class="review">
+            <img src="src/Headshot3.jpg" alt="Headshot of customer three.">
+            <h1>Christi Span&emsp;<span>10/10</span></h1>
+            <p>Outstanding service at StorageRent! The staff's dedication to meeting my needs made a big difference. With clean, accessible units and excellent customer support, my storage experience has been stress-free. If you need a reliable storage solution, this is the place.</p>
+        </div>
+    </section>
+    <!-- Why Us -->
+    <section class="why-us">
+        <div class="why-us-header">
+            <h1>Why choose Storage<span style="color: #8d85e0; font-weight: 900; font-size: 70px;">Rent</span>?</h1>
+        </div>
+        <div class="testimonial-container">
+            <div class="testimonial" style="text-align: center;">
+                <ol style="text-align: left;">
+                    <li>Security and Accessibility</li>
+                    <li>Flexible Storage Options</li>
+                    <li>Competitive Pricing and Convenience</li>
+                    <li>Exceptional Customer Service</li>
+                    <li>Cleanliness and Maintenance</li>
+                </ol>
             </div>
-            <div class="navbar-right">
-                <a href="#home">Home</a>
-                <a href="#news">Find Storage</a>
-                <a href="#news">Unit Size Guide</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Company Info
-                        <i class="fa fa-caret-down">
-                    </i></button>
-                    <div class="dropdown-content">
-                        <a href="#">About Us</a>
-                        <a href="#">History</a>
-                        <a href="#">Values</a>
-                    </div>
-                </div> 
-                <div class="dropdown">
-                    <button class="dropbtn">Support 
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Contact</a>
-                        <a href="#">FAQ</a>
-                    </div>
-                </div> 
+            <div style="width: 60%; display: flex; padding: 5px;" class="testimonial">
+                <div>
+                    <img src="src/Logo.png" alt="Logo of StorageRent">
+                </div>
+                <div>
+                    <p style="text-align: left; padding-right: 20px;">Choose our storage rental services for unbeatable security, flexibility, and convenience. Our facilities offer a wide range of unit sizes, including climate-controlled options, to perfectly match your storage needs without overcharging. Enjoy peace of mind with our state-of-the-art security features, 24/7 access to your belongings, and multiple convenient locations. Benefit from our competitive pricing, month-to-month leases, and exceptional customer service, all while managing your account effortlessly online. Our commitment to cleanliness and maintenance ensures your items are stored in pristine condition. Whether you need temporary storage or a long-term solution, our professional team is here to provide personalized advice and support every step of the way.</p>
+                </div>
             </div>
         </div>
-    </header>
-
-    <!-- The social media icon bar -->
-    <div class="icon-bar">
-    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-    </div>
-    <section>
-        Welcome Panel
     </section>
-    <section>
-        Testiomonails
-    </section>
-    <section>
-        Why Us?
-    </section>
+    <!-- Scroll Button -->
+    <button id="scrollBtn" title="Go to top">↑</button>
+    <!-- Footer -->
     <footer>
-        Footer
+        <p>&copy; 2024 StorageRent  |  <a href="index.html" >Home Page  | </a><a href="storage.html">Find Storage  | </a><a href="guide.html">Storage Guide  | </a><a href="company.html"> About Us  | </a><a href="contact.html">Support  |</a></p>
     </footer>
+    <!-- JavaScript -->
+    <script src="src/app.js"></script>
 </body>
 </html>

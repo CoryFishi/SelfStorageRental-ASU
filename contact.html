@@ -1,41 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact Us</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <!-- Doc Titles -->
+    <title>Storage Rent</title>
+    <link rel="icon" type="image/x-icon" href="src/Logo.png">
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
+    <!-- Navbar -->
     <header>
-        <div class="navbar">
-            <div class="navbar-left">
-                <h1>Storage Rent</h1>
-            </div>
-            <div class="navbar-right">
-                <a href="#home">Home</a>
-                <a href="#news">Find Storage</a>
-                <a href="#news">Unit Size Guide</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Company Info
-                        <i class="fa fa-caret-down">
-                    </i></button>
-                    <div class="dropdown-content">
-                        <a href="#">About Us</a>
-                        <a href="#">History</a>
-                        <a href="#">Values</a>
-                    </div>
-                </div> 
-                <div class="dropdown">
-                    <button class="dropbtn">Support 
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Contact</a>
-                        <a href="#">FAQ</a>
-                    </div>
-                </div> 
-            </div>
+        <div class="logo">
+            <a href="index.html">Storage<span style="color: #8d85e0; font-weight: 900; font-size: x-large;">Rent</span></a>
         </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="storage.html">Find Storage</a></li>
+                <li><a href="guide.html">Size Guide</a></li>
+                <li>
+                    <a href="company.html">About Us</a>
+                    <ul class="sub-link">
+                        <li style="padding-top: 20px; margin-top: -10px;"><a href="company.html">Company Info</a></li>
+                        <li style="border-bottom-left-radius:15px; border-bottom-right-radius: 15px;"><a href="values.html">Values</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact.html">Support</a>
+                    <ul class="sub-link">
+                        <li style="padding-top: 20px; margin-top: -10px;"><a href="contact.html">Contact Us</a></li>
+                        <li style="border-bottom-left-radius:15px; border-bottom-right-radius: 15px;"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <!-- Body -->
+    <section class="contact">
+        <!-- Header Banner -->
+        <div class="contact-header">
+            <h1>Support</h1>
+        </div>
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+            <form novalidate>
+                <label for="fName">First Name: <span>*</span></label>
+                <input type="text" id="fName" name="fName" required>
+                <label for="lName">Last Name:</label>
+                <input type="text" id="lName" name="lName">
+                <br>
+                <label for="email">Email: <span>*</span></label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                <br>
+                <label for="issueType">Issue Type: <span>*</span></label>
+                <select id="issueType" name="issueType" required>
+                    <option value="">--Issue--</option>
+                    <option value="technical">Technical Issue</option>
+                    <option value="billing">Billing Query</option>
+                    <option value="general">General Inquiry</option>
+                </select>
+                <label for="issuePriority">Priority:</label>
+                <select id="issuePriority" name="issuePriority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <br>
+                <label for="issueDescription">Issue Description: <span>*</span></label>
+                <br>
+                <textarea id="issueDescription" name="issueDescription" rows="4"></textarea>
+                <br>
+                <button type="submit" id="ticket-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- Ticket Section -->
+    <h1 style="text-align: center; padding-bottom: 50px;">Active Tickets</h1>
+    <section class="ticket-container" id="ticketContainer">
+    </section>
+    <!-- Scroll Button -->
+    <button id="scrollBtn" title="Go to top">↑</button>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 StorageRent  |  <a href="index.html" >Home Page  | </a><a href="storage.html">Find Storage  | </a><a href="guide.html">Storage Guide  | </a><a href="company.html"> About Us  | </a><a href="contact.html">Support  |</a></p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="src/app.js"></script>
 </body>
 </html>
